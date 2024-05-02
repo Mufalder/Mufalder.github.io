@@ -1,0 +1,89 @@
+@font-face { font-family: Roboto; src: url('../fonts/Roboto-Regular.ttf'); }
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.logo {
+	position: relative;
+	height: 80%;
+	width: 100%;
+}
+
+.logo img {
+	position: absolute;
+	width: 500px;
+	height: 500px;
+	top: 0px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.logo a {
+	color: #30bee6;
+	font-family: Roboto;
+	font-size: 26px;
+	text-decoration: none;
+	text-align: center;
+	width: 100%;
+	height: 32px;
+	position: absolute;
+	margin: auto;
+	top: 550px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.contacts {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 48px;
+	margin-top: 20px;
+}
+
+.contacts a {
+	display: inline-block;
+	width: 48px;
+	height: 48px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.contacts a img {
+	opacity: 0.7;
+	transition: 0.3s;
+}
+
+.contacts a img:hover {
+	opacity: 1;
+}
+
+.fadeIn {
+	animation:opac 3s
+}
+
+@keyframes opac {
+	0% { opacity: 0; }
+	25% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+.bottom {
+	position:relative;
+	animation:animatebottom 3s
+}
+
+@keyframes animatebottom {
+	0% { bottom: -80px; opacity: 0; }
+	25% { opacity: 0; }
+	100% { bottom: 0; opacity: 1}
+}
